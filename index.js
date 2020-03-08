@@ -4,7 +4,7 @@ const { getModule, messages } = require('powercord/webpack')
 const { inject, uninject } = require('powercord/injector')
 const { get } = require('powercord/http')
 
-module.exports = class TextFileViewer extends Plugin {
+module.exports = class UploadFromLinks extends Plugin {
     async startPlugin() {
         inject('ufl', messages, 'sendMessage', args => {
             if (this.processMessage(args[0], args[1])) return false
