@@ -45,7 +45,7 @@ module.exports = class UploadFromLinks extends Plugin {
 
         for (let i = 0; i < files.length; i++) {
             let file
-            if (files[i].url) file = new File([(await get(files[i].url)).body], files[i].name)
+            if (files[i].url) file = new File([ (await get(encodeURI(files[i].url))).body ], files[i].name)
             else file = new File([readFileSync(files[i].path)], files[i].name)
             upload(cid, file, msg)
             msg.content = ''
