@@ -17,6 +17,7 @@ module.exports = class UploadFromLinks extends Plugin {
     }
 
     processMessage(cid, msg) {
+        if (!msg.content) return
         const files = []
         const search = msg.content.split('[').join('][').split(']')
 
