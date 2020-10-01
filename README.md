@@ -8,4 +8,6 @@ Send message with:
 
 or
 
-![usage](https://cdn.discordapp.com/attachments/538759280497786890/686277228765511690/mo3pkfaz.png)
+![usage](https://cdn.discordapp.com/attachments/758081938593415229/758290013694722109/3jpO.png)
+
+with the automatic upload when you can send images but not embeds setting on
